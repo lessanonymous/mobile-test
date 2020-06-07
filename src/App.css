@@ -1,25 +1,26 @@
 .App {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
 }
 
 header {
   background-color: lightcoral;
-  position: fixed;
-  top: 0;
-  height: 5rem;
-  width: 100%;
+  grid-area: 1 / 1 / span 1 / span 1;
+  z-index: 10;
 }
 
 main {
   background-color: lightskyblue;
   padding: 6rem 1rem;
+  grid-area: 1 / 1 / span 3 / span 1;
+  overflow-y: scroll;
 }
 
 footer {
   background-color: lightyellow;
-  position: fixed;
-  bottom: 0;
-  height: 5rem;
-  width: 100%;
+  grid-area: 3 / 1 / span 1 / span 1;
+  z-index: 10;
 }
