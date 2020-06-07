@@ -16,3 +16,21 @@ main {
 footer {
   background-color: lightyellow;
 }
+
+@media (orientation: landscape) {
+  html,
+  body,
+  #root,
+  .App {
+    height: 100%;
+  }
+}
+
+@media (orientation: portrait) {
+  html,
+  body,
+  #root,
+  .App {
+    height: 100%;
+  }
+}
