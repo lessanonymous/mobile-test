@@ -1,19 +1,25 @@
 .App {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  display: grid;
-  grid-template-rows: 5rem 1fr 5rem;
 }
 
 header {
   background-color: lightcoral;
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  width: 100%;
 }
 
 main {
-  overflow-y: scroll;
   background-color: lightskyblue;
+  padding: 6rem 1rem;
 }
 
 footer {
   background-color: lightyellow;
+  position: fixed;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
 }
